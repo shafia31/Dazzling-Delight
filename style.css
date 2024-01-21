@@ -1,0 +1,21 @@
+
+/* generic properties */
+
+:root{ 
+      /*whole HTML*; whatever variables are defined over here , they are going to be present throughout the whole HTML page*/
+
+    --main-color: #00c9a5;
+    --nav-color: #00afa5;
+    --bg-color:
+}
+
+*{
+    margin: 0;  /*to remove all the existing margins & paddings and later give individual values to different elemnts*/
+    padding: 0;
+    box-sizing: border-box; /* see 10:00 */
+    border: none;
+    outline: none;
+    text-decoration: none;  /* removing underlines from anchor tags */
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
