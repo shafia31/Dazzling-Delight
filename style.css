@@ -6,7 +6,8 @@
 
     --main-color: #00c9a5;
     --nav-color: #00afa5;
-    --bg-color:
+    --bg-color: #e8f3f1;
+    --black: #2f4858;
 }
 
 *{
@@ -19,3 +20,14 @@
     text-transform: capitalize;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
+
+html{
+    font-size: 62.5%;  /*initially set by convention, rounding off to 10px*/
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+/* start from 16:00*/
