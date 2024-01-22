@@ -18,3 +18,11 @@ Logo
 Menu
 Icons
 
+# Icons:
+It has three parts:
+Search Bar
+Cart
+Hamburger menu
+
+# Search 
+On hovering it will show a search bar 

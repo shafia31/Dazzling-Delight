@@ -8,6 +8,7 @@
     --nav-color: #00afa5;
     --bg-color: #e8f3f1;
     --black: #2f4858;
+    --dark-blue: #00008B;
 }
 
 *{
@@ -18,7 +19,8 @@
     outline: none;
     text-decoration: none;  /* removing underlines from anchor tags */
     text-transform: capitalize;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.5s ease-in; /* transition property applied to all values + time + type of transition smooth animation*/
 }
 
 html{
@@ -30,4 +32,99 @@ body{
     background-color: var(--bg-color);
 }
 
-/* start from 16:00*/
+/* start from 16:00*/ 
+
+.header {
+    background-color: var(--nav-color);
+    display: flex;   /* making it at the center*/
+    justify-content: space-between;  /*space between logo | menu | icons */
+    align-items: center;
+    padding:1.5rem 7%; /* (7% is dependent on the actual space occupied by the browser) , to put some space betwen image and browser  top-bottom - 1.5rem, left-right - 7%  (rem=root element  1/2 size of root elemnt-HTML size is assigned to heading of this element- header 1rem=10px, 1.5rem=15px) */
+    position: fixed; /* nav bar will remain fix while scrolling*/
+    top:0;
+    left:0;
+    right:0;
+    /*z-index: 1000; highest value assigned ensures this remains at the top*/
+
+}
+
+.header .logo img{
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.header .navbar a{
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0 1rem;  /*up-down left-right*/
+    
+
+}
+
+.header .navbar a:hover{
+    color:var(--black);
+    border-top: 0.3rem solid var(--dark-blue);
+    border-bottom: 0.3rem solid var(--dark-blue);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.header .icons{
+    display: flex;
+
+    
+}
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-left: 2rem; /*to put some space b/t elements*/
+
+}
+
+.header .icons div:hover{
+    color: var(--dark-blue);
+}
+
+
+.header .icons .menu-icon{
+    display: none;          /*for hiding hamburger button*/
+}
+
+/*search - box  bringin the search box slight below navigation bar*/ 
+.header .search-form {
+    display: flex;
+    align-items: center;
+    position:absolute;   /*header is the first element which has it's position fixed, the default value of each element is positioned static , now the search -form will look header as its parent- it will try to position itself with respect to parent*/
+    top: 115%; /*for the search-form the ending part of header is 100% it will start exactly where header section ends*/
+    right: 7%;
+    width: 35rem;
+    height: 3.5rem;
+    background-color: #fff;
+    
+
+}
+
+.header .search-form input{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.header .search-form label{
+   
+    color: var(--black);
+    font-size:1.3rem;
+    padding-right: 1.3rem;
+    cursor: pointer;
+
+}
+
+.header .search-form label:hover{
+    color: var(--main-color);
+}
