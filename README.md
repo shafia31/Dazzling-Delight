@@ -25,4 +25,7 @@ Cart
 Hamburger menu
 
 # Search 
-On hovering it will show a search bar 
+On hovering it will show a search bar otherwise remain hidden. This is done via JS logic with the help of eventListener.
+
+# Cart:
+It contains items to buy

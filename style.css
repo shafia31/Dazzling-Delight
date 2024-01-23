@@ -99,12 +99,15 @@ body{
     align-items: center;
     position:absolute;   /*header is the first element which has it's position fixed, the default value of each element is positioned static , now the search -form will look header as its parent- it will try to position itself with respect to parent*/
     top: 115%; /*for the search-form the ending part of header is 100% it will start exactly where header section ends*/
-    right: 7%;
+    right: -100%;  /*search icon disappears but still there but not in the visible space as x-overflow is hidden..somewhere outside of browser space*/
     width: 35rem;
     height: 3.5rem;
     background-color: #fff;
-    
 
+}
+
+.header .search-form.active{  /*this .active class will change it from -100% to0 7% --- A click event should be defined in JS auch that when we cllick on it the search bar appears*/
+    right: 7%;                   
 }
 
 .header .search-form input{
@@ -127,4 +130,59 @@ body{
 
 .header .search-form label:hover{
     color: var(--main-color);
+}
+
+/*cart section*/
+
+.header .cart-items-container {
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    width: 28rem;
+    background-color: #fff;
+    height: 80vh;
+    border:solid 1px black;
+    padding: 0.8rem;
+}
+
+.header .cart-items-container .active {
+    right: 0;
+}
+
+.header .cart-items-container .cart-item{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: solid 1px black;
+    position: relative; /*with respect to where it should actually be*/
+    gap: 1rem;
+}
+
+.header .cart-items-container .cart-item img{
+    width: 7rem;
+}
+
+.header .cart-items-container .cart-item span{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    font-size: 2rem;
+    color:var(--black);
+    cursor: pointer;
+}
+
+.header .cart-items-container .cart-item span:hover{
+    color:red;
+}
+
+.header .cart-items-container .cart-item .content h3{
+    font-size: 1.3rem;
+    color:var(--black);
+    padding-bottom: 0.5rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1rem;
+    color:var(--main-color);
+
 }
