@@ -44,6 +44,7 @@ body{
     top:0;
     left:0;
     right:0;
+    height: 20vh;
     /*z-index: 1000; highest value assigned ensures this remains at the top*/
 
 }
@@ -55,7 +56,7 @@ body{
 
 .header .navbar a{
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin: 0 1rem;  /*up-down left-right*/
     
 
@@ -79,7 +80,7 @@ body{
 .header .icons div{
     color: #fff;
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     margin-left: 2rem; /*to put some space b/t elements*/
 
 }
@@ -100,8 +101,8 @@ body{
     position:absolute;   /*header is the first element which has it's position fixed, the default value of each element is positioned static , now the search -form will look header as its parent- it will try to position itself with respect to parent*/
     top: 115%; /*for the search-form the ending part of header is 100% it will start exactly where header section ends*/
     right: -100%;  /*search icon disappears but still there but not in the visible space as x-overflow is hidden..somewhere outside of browser space*/
-    width: 35rem;
-    height: 3.5rem;
+    width: 45rem;
+    height: 4.5rem;
     background-color: #fff;
 
 }
@@ -114,7 +115,7 @@ body{
     width: 100%;
     height: 100%;
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color:var(--black);
     text-transform: none;
 }
@@ -122,7 +123,7 @@ body{
 .header .search-form label{
    
     color: var(--black);
-    font-size:1.3rem;
+    font-size: 2rem;
     padding-right: 1.3rem;
     cursor: pointer;
 
@@ -136,23 +137,23 @@ body{
 
 .header .cart-items-container {
     position: absolute;
-    top: -100%;
+    top: 100%;
     right: -100%;
-    width: 28rem;
+    width: 35rem;
     background-color: #fff;
     height: 80vh;
     border:solid 1px black;
     padding: 0.8rem;
 }
 
-.header .cart-items-container .active {
+.header .cart-items-container.active {
     right: 0;
 }
 
 .header .cart-items-container .cart-item{
     display: flex;
     align-items: center;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
     border: solid 1px black;
     position: relative; /*with respect to where it should actually be*/
     gap: 1rem;
@@ -176,13 +177,25 @@ body{
 }
 
 .header .cart-items-container .cart-item .content h3{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color:var(--black);
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
 }
 
 .header .cart-items-container .cart-item .content .price{
-    font-size: 1rem;
+    font-size: 1.3rem;
     color:var(--main-color);
+
+}
+
+
+/*home section*/
+
+.home{
+    min-height: 80vh;
+    margin-top: 20vh;
+
+    background-image: url(Images\bg.jpg);
+    
 
 }
