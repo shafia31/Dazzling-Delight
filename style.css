@@ -9,6 +9,7 @@
     --bg-color: #e8f3f1;
     --black: #2f4858;
     --dark-blue: #00008B;
+    --card-color: #c0dbea;
 }
 
 *{
@@ -32,7 +33,34 @@ body{
     background-color: var(--bg-color);
 }
 
-/* start from 16:00*/ 
+.btn{
+    display: inline-block;  /*margin-top not getting effect in anchor tag of button as anchor element by default is in-line element, therefore it doesn't take account top & bottom margin...That is why display is made to inline*/
+    text-align:center;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 0.8rem 2.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: 0.2rem;
+
+}
+
+.title{
+    text-shadow: 2px 2px 0 var(--card-color), /*horizontal right vertical bottom blur*/ -2px -2px 0 var(--card-color),/*left top*/ -2px 2px 0 var(--card-color) /*for diaogonal*/, 2px -2px 0 var(--card-color); /*diagonal*/
+    text-align:center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.title span{
+    color:var(--main-color);
+}
 
 .header {
     background-color: var(--nav-color);
@@ -44,13 +72,13 @@ body{
     top:0;
     left:0;
     right:0;
-    height: 20vh;
+    height: 16vh;
     /*z-index: 1000; highest value assigned ensures this remains at the top*/
 
 }
 
 .header .logo img{
-    height: 6rem;
+    height: 10rem;
     border-radius: 50%;
 }
 
@@ -154,9 +182,13 @@ body{
     display: flex;
     align-items: center;
     margin: 2.5rem 0;
-    border: solid 1px black;
+    /*border: solid 1px black;*/
     position: relative; /*with respect to where it should actually be*/
     gap: 1rem;
+}
+
+.header .cart-items-container a{
+    width: 100%;
 }
 
 .header .cart-items-container .cart-item img{
@@ -192,10 +224,79 @@ body{
 /*home section*/
 
 .home{
-    min-height: 80vh;
-    margin-top: 20vh;
 
-    background-image: url(Images\bg.jpg);
-    
+    display:flex;
+    align-items: center;
+    min-height: 84vh;
+    margin-top: 16vh;
+    color: var();
+    background-color: #00c9a5;
+    background-image: url("Images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 
 }
+
+.home .hero{
+    width:60rem;  /*60rem = 600pix*/
+}
+
+.home .hero h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:transparent;
+    background: #000;
+    background-image: url(Images/tag-bg5.jpg);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text; /*if any property is not working then use the prefix -webkit- for chrome browser*/
+
+
+
+}
+
+.home .hero p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    padding: 1rem 0;
+    color: #000;
+}
+
+/*Cakes section*/
+
+.wrapper{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));/*write explanation here*/
+    gap: 1.5rem;
+}
+
+.cakes .wrapper .cake-card{
+    background-color: var(--card-color);
+    padding: 3rem 2rem;
+    text-align: center;
+
+}
+.cakes .wrapper .cake-card img{
+    width: 100%;
+}
+
+.cakes .wrapper .cake-card h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.cakes .wrapper .cake-card .price{
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+}
+/*.cakes .wrapper .cake-card .price .span{
+    color: #fff;
+    font-size: 1.rem;
+    text-decoration: line-through;
+}*/
+
+

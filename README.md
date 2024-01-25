@@ -29,3 +29,9 @@ On hovering it will show a search bar otherwise remain hidden. This is done via 
 
 # Cart:
 It contains items to buy
+
+# Hero Section # Section-Home
+It has a banner image and a tagline with description.
+
+# Hero Section #Section-Cakes
+It has h3 & wrapper
