@@ -24,6 +24,8 @@
     text-transform: capitalize;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: all 0.5s ease-in; /* transition property applied to all values + time + type of transition smooth animation*/
+    scroll-behavior:smooth;
+    scroll-padding-top:16vh; /*given the same space as the nav bar is occupying*/
 }
 
 html{
@@ -410,4 +412,71 @@ section{
 }
 .new-arrivals .wrapper .card:hover .content .btn{
     transform: scale(1);
+}
+
+
+/*About us*/
+
+.about .container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    flex-wrap: wrap; /*to fit in it will go to next line*/
+}
+.about .container .img{
+    flex: 1 1 45rem; /*flex grow-flex shrink-flex basis  */
+}
+.about .container .img img{
+    width: 100%;
+}
+
+.about .container .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .container .content h3{
+    font-size: 3rem;
+    color: #fff;
+    padding: 1.2 rem 0;
+}
+.about .container .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 2.2rem;
+}
+
+/*testimonial*/
+
+.review .wrapper .review-card{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.review .wrapper .review-card img{
+    height: 4rem;
+}
+.review .wrapper .review-card p{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: gray;
+    padding: 2rem 0;
+}
+.review .wrapper .review-card:hover p{
+    color: var(--black);
+}
+.review .wrapper .review-card .customer{
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.review .wrapper .review-card:hover .customer{
+    transform: scale(1.1);
+}
+.review .wrapper .review-card h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #000C66;
+    /*text-shadow: 2px 2px 0 var(--card-color), /*horizontal right vertical bottom blur -2px -2px 0 var(--card-color),left top -2px 2px 0 var(--card-color) for diaogonal, 2px -2px 0 var(--card-color); /*diagonal*/
 }
