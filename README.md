@@ -35,3 +35,12 @@ It has a banner image and a tagline with description.
 
 # Hero Section #Section-Cakes
 It has h3 & wrapper
+
+|
+|
+|
+|
+|
+
+# responsivness
+done by using grid template columns, min-max values, flex wrap,flex basis

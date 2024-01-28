@@ -4,8 +4,8 @@
 :root{ 
       /*whole HTML*; whatever variables are defined over here , they are going to be present throughout the whole HTML page*/
 
-    --main-color: #00c9a5;
-    --nav-color: #00afa5;
+    --main-color: #68BBE3; /*#739bd4; /*#00c9a5*/;
+    --nav-color:#68BBE3; /*#739bd4; /*#00afa5*/;
     --bg-color: #e8f3f1;
     --black: #2f4858;
     --dark-blue: #00008B;
@@ -235,8 +235,8 @@ section{
     align-items: center;
     min-height: 84vh;
     margin-top: 16vh;
-    color: var();
-    background-color: #00c9a5;
+    color: var(--black);
+    background-color: #68bbe3; /*#00c9a5;*/
     background-image: url("Images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -264,7 +264,7 @@ section{
 
 .home .hero p{
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 3.2rem;
     padding: 1rem 0;
     color: #000;
@@ -479,4 +479,105 @@ section{
     font-size: 2rem;
     color: #000C66;
     /*text-shadow: 2px 2px 0 var(--card-color), /*horizontal right vertical bottom blur -2px -2px 0 var(--card-color),left top -2px 2px 0 var(--card-color) for diaogonal, 2px -2px 0 var(--card-color); /*diagonal*/
+}
+.review .wrapper .review-card .stars i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding: 0.8rem 0;
+}
+
+/*contat us sesction*/
+
+.contact .contents{
+    display:flex;
+    background-color: #b9cff0;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+.contact .contents iframe{
+    height: 50rem;
+    flex: 1 1 45rem;
+    object-fit: cover;
+}
+.contact .contents form{
+    height: 50rem;
+    flex: 1 1 45rem;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+.contact .contents form h3{
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 3.5rem;
+    padding: 1rem 0;
+}
+.contact .contents form .input-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: var(--border);
+    border-color:var(--black);
+}
+.contact .contents form .input-box span{
+        color: var(--dark-blue);
+        font-size: 2rem;
+        padding-left: 2rem; 
+}
+.contact .contents form .input-box input{
+    background-color: #b9cff0;
+    text-transform: none;
+    color: var(--black);
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+/*footer section*/
+
+footer{
+    background-color: var(--black);
+    text-align: center;
+}
+.footer .social-media{
+    padding: 1rem 0;
+}
+.footer .social-media a {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border:var(--border);
+    margin: 0.5rem;
+}
+.footer .social-media a:hover{
+    background-color: var(--main-color);
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+.footer .links a{
+   padding: 0.7rem 2rem;
+   color: #fff;
+   border:var(--border);
+   font-size: 2rem;
+}
+.footer .links a:hover{
+    background-color:var(--main-color) ;
+}
+.footer .credits{
+    font-size: 2rem;
+    color:#fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+.footer .credits span a{
+    color:var(--main-color);
+    text-decoration-line: underline;
 }
