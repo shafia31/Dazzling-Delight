@@ -24,3 +24,9 @@ cartIcon.addEventListener('click', () => {
     searchForm.classList.remove("active");
     navbar.classList.remove("active");
 });
+
+window.onscroll = ()=> {
+    cartItemsContainer.classList.remove("active");
+    searchForm.classList.remove("active");
+    navbar.classList.remove("active");
+}
