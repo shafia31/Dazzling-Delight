@@ -386,18 +386,20 @@ section{
 }
 .new-arrivals .wrapper .card .img{
     width: 100%;
+    
 }
 .new-arrivals .wrapper .card .img img{
     height:100%;
     object-fit: contain;
     width: 100%;
+    align-items: center;
     
 }
 
 .new-arrivals .wrapper .card .content{
     padding: 2rem;
 }
-.new-arrivals .wrapper .card .content a:nth-of-type(1){ /*it will loook for any elemnt whose type is anchor withing content div () the number of anchor tag*/
+.new-arrivals .wrapper .card .content a:nth-of-type(1){ /*it will loook for any elemnt whose type is anchor within content div () the number of anchor tag*/
     font-size: 2.5rem;
     line-height: 5rem;
     color: black;
@@ -413,6 +415,7 @@ section{
 }
 .new-arrivals .wrapper .card:hover .content .btn{
     transform: scale(1);
+    height: 100%;
 }
 
 
@@ -462,6 +465,7 @@ section{
     line-height: 2.2rem;
     color: gray;
     padding: 2rem 0;
+    text-transform:none;
 }
 .review .wrapper .review-card:hover p{
     color: var(--black);
@@ -580,7 +584,7 @@ footer{
 }
 .footer .credits span a{
     color:var(--main-color);
-    text-decoration-line: underline;
+    text-decoration-line: none;
 }
 
 /*media query for tablets & small laptops*/
