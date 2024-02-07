@@ -36,7 +36,11 @@ It has a banner image and a tagline with description.
 # Hero Section #Section-Cakes
 It has h3 & wrapper
 
-|
+# cup cakes 
+pastries 
+new arrivals 
+testimonials 
+footer contacts 
 |
 |
 |
@@ -44,3 +48,4 @@ It has h3 & wrapper
 
 # responsivness
 done by using grid template columns, min-max values, flex wrap,flex basis
+
