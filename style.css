@@ -76,7 +76,7 @@ section{
     justify-content: space-between;  /*space between logo | menu | icons */
     align-items: center;
     padding:1.5rem 7%; /* (7% is dependent on the actual space occupied by the browser) , to put some space betwen image and browser  top-bottom - 1.5rem, left-right - 7%  (rem=root element  1/2 size of root elemnt-HTML size is assigned to heading of this element- header 1rem=10px, 1.5rem=15px) */
-    position: fixed; /* nav bar will remain fix while scrolling*/
+    position: sticky; /* nav bar will remain fix while scrolling*/
     top:0;
     left:0;
     right:0;
@@ -234,7 +234,7 @@ section{
     display:flex;
     align-items: center;
     min-height: 84vh;
-    margin-top: 16vh;
+    /*margin-top: 16vh;*/
     color: var(--black);
     background-color: #68bbe3; /*#00c9a5;*/
     background-image: url("Images/bg.jpg");
