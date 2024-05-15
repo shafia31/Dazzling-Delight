@@ -245,7 +245,8 @@ section{
 }
 
 .home .hero{
-    width:60rem;  /*60rem = 600pix*/
+    max-width:600px;
+    width: 100%; 
 }
 
 .home .hero h3{
