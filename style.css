@@ -57,7 +57,7 @@ section{
 
 }
 
-h1{
+.title{
     text-shadow: 2px 2px 0 var(--card-color), /*horizontal right vertical bottom blur*/ -2px -2px 0 var(--card-color),/*left top*/ -2px 2px 0 var(--card-color) /*for diaogonal*/, 2px -2px 0 var(--card-color); /*diagonal*/
     text-align:center;
     color:#fff;
